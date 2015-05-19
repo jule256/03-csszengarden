@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background: #CCDCE9;
+    line-height: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+}
+a {
+    color: #005092;
+    text-decoration: none;
+}
+a:hover {
+    color: #F75D00;
+}
+h1, h2 {
+    margin: 0;
+    padding: 4px 0px 4px 7px;
+    position: relative;
+    left: 20px;
+    width: 187px;
+    height: 22px;
+    line-height: 19px;
+    color: #005291;
+    background-color: #FFFFFF;
+    background-image: url('resource/right1.gif');
+    background-position: 185px 8px;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+h1:hover, h2:hover {
+    color: #F75D00;
+    background-image: url('resource/right1_hover.gif');
+    cursor: pointer;
+}
+
+abbr {
+    border: none;
+}
+
+.page-wrapper {
+    margin: auto;
+    width: 959px;
+    min-width: 959px;
+    background-color: #FFFFFF;
+}
+
+header {
+    width: 100%;
+    height: 195px;
+    background: url('resource/header_campus_01_with_logo.png') top left no-repeat;
+}
+
+    h1 { /* h1 is only used in header */
+        top: 84px;
+    }
+
+    h2 { /* h2 is only used in header */
+        top: 88px;
+        line-height: 20px;
+        background-position: 185px 9px;/**/
+    }
+
+    .summary {
+        width: 765px;
+        height: 18px;
+        margin-left: 20px;
+        border-bottom: 1px solid #000000;
+    }
+
+    .summary p:first-child {
+        margin: 0;
+        width: 85px;
+        height: 18px;
+        color: #F75D00;
+        overflow: hidden;
+        -ms-text-overflow: clip;
+        text-overflow: clip;
+        font-size: 10px;
+    }
+
+    .summary p:nth-child(2) { /* hide 2nd paragraph because it's not needed for the HSR layout */
+        display: none;
+    }
+
+    .preamble {
+        padding: 15px 0 0 20px;
+        float: left;
+        width: 214px;
+        height: 585px;
+        background-color: #FFFFFF;
+    }
+
+        .preamble h3 { /* hide headline because it's not needed for the HSR layout */
+            display: none;
+        }
+
+        .preamble p {
+            margin: 0;
+            width: 194px;
+            height: 13px;
+            overflow: hidden;
+            -ms-text-overflow: clip;
+            text-overflow: clip;
+            color: #005092;
+            font-size: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #B3B4B5;
+            background-position: 0 3px;
+            background-repeat: no-repeat;
+        }
+
+        .preamble p:hover {
+            padding-left: 10px;
+            width: 184px;
+            color: #F75D00;
+            background-image: url('resource/right1_hover.gif');
+        }
+
+        .preamble p:nth-child(2) {
+            border-top: 1px solid #B3B4B5;
+        }
+
+.main {
+    padding: 3px 147px 0 17px;
+    float: left;
+    position: relative;
+    width: 387px;
+    height: 597px;
+    z-index: 2; /* overlap .extra2 */
+    background-color: #FFFFFF;
+}
+
+    .explanation h3 {
+        padding: 3px 0 4px 7px;
+        width: 373px;
+        background-color: #005092;
+        color: #FFFFFF;
+        font-size: 12px;
+    }
+
+    /* hide paragraphs because they don't fit into the HSR layout */
+    .explanation p {
+        display: none;
+    }
+
+    .participation h3 {
+        margin: 26px 0 5px 0;
+        font-size: 10px;
+    }
+
+    .participation p {
+        margin: 0;
+        font-size: 11px;
+    }
+
+    /* hide last paragraph because it is not needed for HSR layout */
+    .participation p:last-child {
+        display: none;
+    }
+
+    .participation a {
+        font-size: 10px;
+    }
+
+    /* hide .benefits because it is not needed for HSR layout */
+    .benefits {
+        display: none;
+    }
+
+    .requirements {
+        padding-top: 17px;
+    }
+
+        /* hide this h3 because it is not needed for HSR layout */
+        .requirements h3 {
+            display: none;
+        }
+
+        .requirements p {
+            margin: 0;
+            padding-left: 25px;
+            width: 170px;
+            height: 15px;
+            overflow: hidden;
+            -ms-text-overflow: clip;
+            text-overflow: clip;
+            color: #005092;
+            font-size: 10px;
+            cursor: pointer;
+            background-image: url('resource/bullet_bi.gif');
+            background-position: 3px 5px;
+            background-repeat: no-repeat;
+        }
+
+        .requirements p:hover,.requirements p:hover a {
+            color: #F75D00;
+        }
+
+
+.sidebar {
+    float: left;
+    position: relative;
+    top: -89px;
+    width: 144px;
+    z-index: 2;
+    background-color: transparent;
+}
+
+    .wrapper h3 {
+        width: 124px;
+        font-size: 10px;
+        background-color: #CCDCE9;
+    }
+
+    .design-selection {
+        margin: 0 10px 0 10px;
+        background-color: #CCDCE9;
+    }
+
+    .design-selection h3 {
+        margin: 10px 0 0 0;
+        padding: 7px 10px 0 10px;
+        height: 121px;
+        background-color: #CCDCE9;
+        background-image: url('resource/hochschuldienst.jpg');
+        background-position: 0px 30px;
+        background-repeat: no-repeat;
+    }
+
+    .design-selection ul {
+        margin: 0;
+        padding: 20px 0 18px 10px;
+        width: 134px;
+        list-style-type: none;
+        font-size: 10px;
+        background-color: #CCDCE9;
+    }
+
+        .design-selection li {
+            height: 12px;
+        }
+
+        .design-selection a {
+            color: #000000;
+            cursor: text;
+        }
+
+        /* hide additional links because we only need 3 for the HSR design */
+        .design-selection :nth-child(4n), .design-selection :nth-child(5n), .design-selection :nth-child(6n), .design-selection :nth-child(7n), .design-selection :nth-child(8n) {
+            display: none;
+        }
+
+        /* hide 2nd a tag per li because it does not fit in the design */
+        .design-selection a[href^="http://"] {
+            display: none;/**/
+        }
+
+    .design-archives {
+        margin: 0 10px 0 10px;
+        background-color: #CCDCE9;
+    }
+
+        .design-archives h3 {
+            margin: 10px 0 0 0;
+            padding: 7px 10px 0 10px;
+            height: 12px;
+        }
+
+        .design-archives ul {
+            margin: 0;
+            padding: 20px 0 18px 10px;
+            width: 134px;
+            list-style-type: none;
+            font-size: 10px;
+            background-color: #CCDCE9;
+        }
+
+        .design-archives li {
+            height: 13px;
+        }
+
+        /* spread blue box by adding margin to the last li */
+        .design-archives li:last-child {
+            margin-bottom: 37px;
+        }
+
+    .zen-resources {
+        margin: 0 10px 0 10px;
+        background-color: #CCDCE9;
+    }
+
+    .zen-resources h3 {
+        margin: 10px 0 0 0;
+        padding: 7px 10px 0 10px;
+        height: 121px;
+        background-color: #CCDCE9;
+        background-image: url('resource/studentenwohnheim.jpg');
+        background-position: 0px 42px;
+        background-repeat: no-repeat;
+    }
+
+    .zen-resources ul {
+        margin: 0;
+        padding: 9px 0 18px 10px;
+        width: 134px;
+        list-style-type: none;
+        font-size: 10px;
+        background-color: #CCDCE9;
+    }
+
+    .zen-resources li {
+        height: 12px;
+    }
+
+    /* hide additional links because we only need 4 for the HSR design */
+    .zen-resources :nth-child(4n) {
+        display: none;
+    }
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    left: -214px;
+    width: 919px;
+    height: 52px;
+    font-size: 10px;
+    font-weight: bold;
+    border-top: 1px solid #B3B4B5;
+}
+
+    footer::before {
+        content: "HSR Hochschule für Technik Rapperswil,"
+    }
+
+    footer a {
+        display: none; /* hide all a elements in footer exept first and last one */
+        font-weight: normal;
+        line-height: 12px;
+        color: #000000;
+        cursor: text;
+    }
+
+    footer a:first-child {
+        display: inline;
+        color: #000000;
+        cursor: text;
+    }
+
+    footer a:first-child::before {
+        content: "Oberseestrasse 10, Postfach 1475, CH-8640 Rapperswil, "
+    }
+
+    footer a:last-child {
+        display: block; /* display block creates a linebreak - YAY */
+    }
+
+    footer a:last-child::before {
+        content: "T +41 (0)55 222 41 11, office(at)hsr.ch · Mitglied der FHO Fachhochschule Ostschweiz "
+    }
+
+/* extra1 is used for the "Übersicht" box */
+.extra1 {
+    margin-left: 161px;
+    padding: 4px 21px 6px 5px;
+    position: absolute;
+    top: 229px;
+    left: 50%;
+    width: 118px;
+    height: 26px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 13px;
+    background-image: url('resource/right1.gif');
+    background-position: 134px 7px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: #CCDCE9;
+    z-index: 3;
+}
+.extra1::after {
+    content: "Übersicht Bildungsangebot";
+}
+.extra1:hover {
+    background-image: url('resource/right1_hover.gif');
+}
+
+/* extra2 is used to provide background for the column on the right side */
+.extra2 {
+    position: absolute;
+    top: 214px;
+    left: 50%;
+    width: 479px;
+    height: 600px;
+    background-color: #FFFFFF;
+    z-index: 0;
+}
+
+/* extra3, extra4, extra5, and extra6 is used for header elements */
+/* does NOT work if the browser is horizontally shrinked below 959 pixel */
+.extra3, .extra4, .extra5, .extra6 {
+    position: absolute;
+    left: 50%;
+    top: -1px;
+    height: 31px;
+    font-size: 10px;
+    color: #0065A3;
+    cursor: pointer;
+    background-color: #F8F8F8;
+    z-index: 2;
+}
+.extra3:hover, .extra4:hover, .extra5:hover, .extra6:hover {
+    color: #F75D00;
+}
+.extra3 {
+    margin-left: -229px;
+    padding-left: 8px;
+    width: 60px;
+}
+.extra3::after {
+    content: "Aktuelles"
+}
+.extra4 {
+    margin-left: -174px;
+    padding-left: 8px;
+    width: 60px;
+}
+.extra4::after {
+    content: "Die HSR"
+}
+.extra5 {
+    margin-left: -122px;
+    padding-left: 8px;
+    width: 60px;
+}
+.extra5::after {
+    content: "Medien"
+}
+.extra6 {
+    margin-left: -75px;
+    padding-left: 8px;
+    width: 166px;
+}
+.extra6::after {
+    content: "Kontakt"
+}
