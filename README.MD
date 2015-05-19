@@ -1,5 +1,5 @@
 # HSR Layout in CSS Zen Garden
 
-see [githubiolink] for HTML preview.
+see [github.io] for a HTML preview.
 
-[githubiolink]:http://htmlpreview.github.io/?https://github.com/jule256/03-csszengarden/blob/master/index.html
+[github.io]:http://htmlpreview.github.io/?https://github.com/jule256/03-csszengarden/blob/master/index.html
