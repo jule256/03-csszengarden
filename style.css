@@ -79,7 +79,7 @@ header {
 
     .summary p:first-child {
         margin: 0;
-        width: 85px;
+        width: 80px;
         height: 18px;
         color: #F75D00;
         overflow: hidden;
@@ -408,10 +408,11 @@ footer {
 /* extra3, extra4, extra5, and extra6 is used for header elements */
 /* does NOT work if the browser is horizontally shrinked below 959 pixel */
 .extra3, .extra4, .extra5, .extra6 {
+    padding-top: 9px;
     position: absolute;
     left: 50%;
     top: -1px;
-    height: 31px;
+    height: 22px;
     font-size: 10px;
     color: #0065A3;
     cursor: pointer;
